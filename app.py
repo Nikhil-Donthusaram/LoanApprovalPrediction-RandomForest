@@ -1,6 +1,7 @@
 import streamlit as st
 import numpy as np
 import pickle
+import os
 
 # Load the trained model
 with open("loan_model.pkl", "rb") as file:
@@ -55,4 +56,6 @@ if st.button("🔍 Predict Loan Approval"):
         st.balloons()
     else:
         st.error("❌ Sorry, the loan is **Not Approved** based on the given information.")
-
+model_path = os.path.join(os.path.dirname(__file__), 'loan_model.pkl')
+with open(model_path, 'rb') as file:
+    model = pickle.load(file)
