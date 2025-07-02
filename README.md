@@ -60,3 +60,8 @@ Financial institutions receive thousands of loan applications every day. Manuall
 - **Version Control:** Git + GitHub
 - **Deployment:** Streamlit Cloud
 
+### ✅ 1. Clone the Repo
+
+```bash
+git clone https://github.com/Nikhil-Donthusaram/LoanApprovalPrediction-RandomForest.git
+cd LoanApprovalPrediction-RandomForest
